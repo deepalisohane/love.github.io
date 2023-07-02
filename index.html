@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Calculator</title>
     <style>
         body{
@@ -21,6 +22,11 @@
             left:50%;
             transform: translate(-50%, -50%);
             position: absolute;
+        }
+        @media screen and (max-width: 450px) {
+            #lovevalue{
+                width:100%;
+            }
         }
     </style>
 </head>
@@ -44,7 +50,7 @@
                 </div>
                 <br>
                 <div>
-                    <input type="text" name="" id="lovevalue" class="form-control w-25 text-center m-auto" placeholder="lovepercentage">
+                    <input type="text" name="" id="lovevalue" class="form-control w-25 text-center m-auto sm-4" placeholder="lovepercentage" disabled>
                 </div>
             </div>
             <div class="card-footer">God Bless Your Relationship</div>
